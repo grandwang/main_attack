@@ -7,12 +7,11 @@ All datasets' url have been marked in our manuscript.
 
 IF you download Imagenet or Imagenet-mini (https://www.kaggle.com/datasets/ifigotin/imagenetmini-1000), pls change the "data_dir" in the code to your path.
 Every datasets should have a same structure like this:
-
-  ---your dataset
-    ---train
-      ---class1
-        ---image1
-        ---image2
-        ......
+dataset
+-datasets name
+ --class 1
+   ---pic001
+   ---pic002
+   ---pic003  
 
 
