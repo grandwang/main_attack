@@ -77,11 +77,10 @@ def chooseQ(x, y):
         else:
             return y
     else:
-        print("p与q_quo维度不一致，检查数据集处理")
+        print("Error on dimentions")
     return
 
 
-# 限制边界
 def boundary(x, Vmin, Vmax):
     if x < Vmin:
         x = Vmin
@@ -90,12 +89,7 @@ def boundary(x, Vmin, Vmax):
     return x
 
 
-'''
-对抗攻击所需部分
-'''
-
-
-def add_watermark_to_image(image, xs, watermark, sl):  # (宿主图,np_list[ii],水印logo,sl=4)
+def add_watermark_to_image(image, xs, watermark, sl):
     preprocess = transforms.Compose([
         transforms.Resize(224),
         transforms.CenterCrop(224),
@@ -118,7 +112,7 @@ def add_watermark_to_image(image, xs, watermark, sl):  # (宿主图,np_list[ii],
     b = np.clip(b, 0, 224 - watermark_y)
     x_pos = int(a)
     y_pos = int(b)
-    rgba_image.paste(rgba_watermark, (x_pos, y_pos), rgba_watermark_mask)  # 图像坐标原点是左上角
+    rgba_image.paste(rgba_watermark, (x_pos, y_pos), rgba_watermark_mask)
     # Image._show(rgba_image)
     return rgba_image
 
