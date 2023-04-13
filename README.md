@@ -36,7 +36,7 @@ python advattack_on_face.py
 
 ### Environment Settings:
 This project is tested under the following environment settings:
-'''
+```
 - OS: win10 21h2
 - advertorch=0.2.3
   cudatoolkit=11.3.1
@@ -47,6 +47,5 @@ This project is tested under the following environment settings:
   opencv-python=3.4.2.16
   pandas=1.2.0
   python=3.7.11
-  pytorch=1.11.0=py3.7_cuda11.3_cudnn8_0
-  scikit-learn=1.0.1
-  '''
+  pytorch=1.11.0
+```
