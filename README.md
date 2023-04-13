@@ -2,7 +2,7 @@
 
 This is the Pytorch code for our paper “MISPSO-Attack: An Efficient Adversarial Watermarking Attack Based on Multiple Initial Solution Particle Swarm Optimization”.
 
-![Algprocessalter](D:\PaperLearning\达瓦里希\MISPSO-Attack-Sec-Revision\figure\Algprocessalter.png)
+![Algprocessalter](https://user-images.githubusercontent.com/36922651/231676550-a22605ae-04df-483b-a2ec-54d2d451c158.png)
 
 Pretrained weights at Aliyun Drive: https://www.aliyundrive.com/s/UcKWpgwtJeu
 
